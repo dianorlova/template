@@ -92,6 +92,8 @@
     margin: 24px 15px 0;
 }
 .avatar {
+    background-image: url("https://lastfm.freetls.fastly.net/i/u/300x300/fd986fc5fc0f014177a9222c23443739.jpg");
+    background-size: cover; /* захватывает всю картинку целиком */
     border-radius: 50%;
     width: 140px;
     height: 140px;
@@ -150,15 +152,21 @@ li.genre + li:before{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    flex: 2;
 }
 .track__img{
+    background-image: url("https://lastfm.freetls.fastly.net/i/u/300x300/8b40692a1133af4047cebebc2e67280b.jpg");
+    background-size: cover; /* захватывает всю картинку целиком */
     width: 60px;
     height: 60px;
+    flex: -1;
 }
 .track__name,
 .track__nameArtist {
     font-size: 14px;
     color: #222;
+    flex: 1;
+
 }
 .track__nameArtist__link,
 .track__name__link {
@@ -275,7 +283,7 @@ ul.footer__legal__list li a{
     margin-top: 48px;
     margin-bottom: 48px;
 }
-.tracks__serach__flex__container{
+.tracks__search__flex__container{
     display: flex;
     flex-direction: column;
     margin-top: 24px;
@@ -290,15 +298,32 @@ ul.footer__legal__list li a{
     padding: 5px 15px;
 }
 .play__track__search__item {
+    background-image: url(./play.png);
     border-radius: 100%;
     width: 50px;
     height: 50px;
 }
 .img__track__search__item{
+    background-image: url("https://lastfm.freetls.fastly.net/i/u/300x300/8b40692a1133af4047cebebc2e67280b.jpg");
+    background-size: cover; /* захватывает всю картинку целиком */
     width: 50px;
     height: 50px;
+    margin-right: 10px;
 }
 
-.track__time{
-    color: #666;
+
+.search__bar__container {
+    display: flex;
+    flex-direction: row;
 }
+
+.search__button {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    min-width: 100px;
+    min-height: 40px;
+    margin-left: 24px; 
+    border-radius: 5px;
+}
+
