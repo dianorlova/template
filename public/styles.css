@@ -22,62 +22,11 @@
 /* см. src/footer/footer.css */
 
                     /* search */
-.h1__search{
-    margin: 24px 0;
-}
-.input__search {
-    width: 50%;
-    height: 40px;
-    padding: 6px 80px 6px 12px;
-    border-radius: 5px;
-    border: 2px solid #999;
-    font-size: 14px;
-}
-.tracks__search{
-    margin-top: 48px;
-    margin-bottom: 48px;
-}
-.tracks__search__flex__container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 24px;
-    width: 45%;
-}
-.track__search__item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid #999;
-    padding: 5px 15px;
-}
-.play__track__search__item {
-    background-image: url(./play.png);
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-}
-.img__track__search__item{
-    background-image: url("https://lastfm.freetls.fastly.net/i/u/300x300/8b40692a1133af4047cebebc2e67280b.jpg");
-    background-size: cover; /* захватывает всю картинку целиком */
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
 
 
-.search__bar__container {
-    display: flex;
-    flex-direction: row;
-}
 
-.search__button {
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
-    min-width: 100px;
-    min-height: 40px;
-    margin-left: 24px; 
-    border-radius: 5px;
-}
+
+
+
+
 

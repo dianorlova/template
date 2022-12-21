@@ -1,0 +1,44 @@
+.flex__container__popularTracks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 24px auto 48px auto;
+}
+.base_link:hover {
+    text-decoration: underline;
+}
+.track {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25%;
+    margin: 10px 0;
+}
+.track__info{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 2;
+}
+.track__img{
+    background-image: url("https://lastfm.freetls.fastly.net/i/u/300x300/8b40692a1133af4047cebebc2e67280b.jpg");
+    background-size: cover; /* захватывает всю картинку целиком */
+    width: 60px;
+    height: 60px;
+    flex: -1;
+}
+.track__name,
+.track__nameArtist {
+    font-size: 14px;
+    color: #222;
+    flex: 1;
+
+}
+.track__nameArtist__link,
+.track__name__link {
+    text-decoration: none;
+}
