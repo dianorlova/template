@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="./scripts/search_script.js" defer> </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -36,77 +37,20 @@
     </header>
 
     <main class="content">
-      <h1 class="h1__search">Search results for "Never Gonna Give You Up"</h1>
-      <input class="input__search" type="text" placeholder="Search for music…">
-      <section class="tracks__search">
-        <h2>Tracks</h2>
-        <div class="tracks__serach__flex__container">
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-            <div class="track__search__item">
-                <img class="play__track__search__item" src="play.png">
-                <img class="img__track__search__item" src="https://lastfm.freetls.fastly.net/i/u/64s/7eedf5854f216eba1908447afdb746d6.jpg">
-                <span>Never Gonna Give You Up</span>
-                <span>Rick Astley</span>
-                <span class="track__time">5:46</span>
-            </div>
-        </div>
-      </section>
+      <h1 class="h1__search">Search results for "Your search request"</h1>
+      <div class="search__bar__container">
+        <input class="input__search" type="search" placeholder="Search for music…">
+        <button class="search__button" type="button"> Найти </button>
+      </div>
 
+      <!-- <div class="main__title">Tracks</div>
+      <div class="main__track__list">Nothing found!</div> -->
+        <div class="tracks__search">
+          <h2 class="h2__search">Tracks</h2>
+
+          <div class="tracks__search__flex__container">Вы что-то ищите? Напишите запрос выше!</div>
+          
+        </div>
 
     </main>
 
