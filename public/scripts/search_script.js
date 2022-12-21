@@ -10,17 +10,42 @@ const tracks = document.getElementsByClassName('tracks__search__flex__container'
 // получает со страницы HTML обьект с классом h1__search
 const h1__search = document.getElementsByClassName('h1__search')[0];
 
-
 /**
  * выполняет функцию поиска и добавляет на страницу результаты поиска
  */
+
+
+input.addEventListener('keydown', (event) => {
+    if (event.key === "Enter") {
+        searchTracks()
+    }
+})
+
 button.addEventListener('click', (_) => {
+    searchTracks()
+})
+
+
+/**
+ * Создает HTML элемент
+ * @param {string} tag - HTML тег
+ * @param {string} className - имя класса, которое нужно присвоить элементу 
+ * @returns {string} HTML элемент
+ */
+function createHTMLElement(tag, className) {
+    const element = document.createElement(tag);
+    element.className = className;
+
+    return element;
+}
+
+function searchTracks() {
     if (input.value === '') {
         window.alert('Упс! Запрос для поиска пуст.\nПожалуйста, введите запрос.');
     }
     else {
         h1__search.innerHTML = `Search results for "${input.value}"`
-        fetch(`http://ws.audioscrobbler.com/2.0/?method=track.search&track=${input.value}&api_key=${key}&format=json`)
+        fetch(`http://ws.audioscrobbler.com/2.0/?method=track.search&track=${input.value}&api_key=${key}&format=json&limit=12`)
             .then((response) => response.json())
             .then((json) => {
                 
@@ -32,7 +57,6 @@ button.addEventListener('click', (_) => {
                 else{
                     tracks.innerHTML = '';
                     searched
-                    .slice(0, 12)
                         .forEach((track) => {
                             const track__search__item = createHTMLElement('div', 'track__search__item');
 
@@ -63,18 +87,4 @@ button.addEventListener('click', (_) => {
             })
 
     }
-})
-
-
-/**
- * Создает HTML элемент
- * @param {string} tag - HTML тег
- * @param {string} className - имя класса, которое нужно присвоить элементу 
- * @returns {string} HTML элемент
- */
-function createHTMLElement(tag, className) {
-    const element = document.createElement(tag);
-    element.className = className;
-
-    return element;
 }

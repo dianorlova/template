@@ -1,0 +1,42 @@
+.header {
+    position: sticky; /* == position: fixed; */
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: lightgrey;
+    font-size: 14px;
+}
+.header__player {
+    height: 58px;
+    width: 58px;
+}
+.header__link {
+    margin-left: 22%;
+
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 25%;
+    margin: 0 10px;
+}
+.header__navLink {
+    color: inherit;
+    font-family: Helvetica,Arial,Sans-serif;
+    text-decoration: none;
+}
+.header__navLink:hover {
+    color: white;
+}
+.header__userIcon {
+    width: 40px;
+    height: 40px;
+}
+.header__searchIcon {
+    width: 30px;
+    height: 30px;
+}

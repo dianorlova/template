@@ -7,13 +7,12 @@ const artists = document.getElementsByClassName('flex__container__artists')[0];
 const popularTracks = document.getElementsByClassName('flex__container__popularTracks')[0];
 
 /**
- * Добавляет на стринцу  список популярных артистов (исполнителей)
+ * Добавляет на стриницу  список популярных артистов (исполнителей)
  */
- fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${key}&format=json`)
+ fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${key}&format=json&limit=12`)
  .then((response) => response.json())
  .then((json) => {
      json.artists.artist
-         .slice(0, 12)
          .forEach((artist) => {
              const artist__card = createHTMLElement('div', 'artist__card');
              const artist__link = createHTMLElement('a', 'artist__link base_link');
@@ -37,11 +36,10 @@ const popularTracks = document.getElementsByClassName('flex__container__popularT
 /**
  * добавляет на страницу список популярных треков
  */
- fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${key}&format=json`)
+ fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${key}&format=json&limit=12`)
  .then((response) => response.json())
  .then((json) => {
      json.tracks.track
-         .slice(0, 12)
          .forEach((track) => {
             const track_div = createHTMLElement('div', 'track');
             const track__img = createHTMLElement('img', 'track__img');

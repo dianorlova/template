@@ -1,0 +1,22 @@
+
+.track__search__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #999;
+    padding: 5px 15px;
+}
+.play__track__search__item {
+    background-image: url(./play.png);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+.img__track__search__item{
+    background-image: url("https://lastfm.freetls.fastly.net/i/u/300x300/8b40692a1133af4047cebebc2e67280b.jpg");
+    background-size: cover; /* захватывает всю картинку целиком */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
